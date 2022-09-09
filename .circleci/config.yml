@@ -6,7 +6,7 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.7
-    working_derectory: ~/rails-docker-hnt/src
+    working_directory: ~/rails-docker-hnt/src
     steps:
       - checkout:
         path: ~/rails-docker-hnt
