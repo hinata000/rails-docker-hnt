@@ -6,11 +6,11 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.7
-      working_derectory: ~/rails-docker-hnt/src
-      steps:
-        - checkout:
-          path: ~/rails-docker-hnt
-        - ruby/install-deps
+    working_derectory: ~/rails-docker-hnt/src
+    steps:
+      - checkout:
+        path: ~/rails-docker-hnt
+      - ruby/install-deps
 
   test:
     docker:
