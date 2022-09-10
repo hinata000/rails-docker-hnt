@@ -47,9 +47,6 @@ jobs:
           version: 19.03.13
       - heroku/install
       - run:
-          name: heroku login
-          command: heroku container:login
-      - run:
           name: push docker image
           command: heroku container:push web -a $HEROKU_APP_NAME
       - run:
